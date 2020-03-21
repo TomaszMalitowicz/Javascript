@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assigment 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        button {
+            display: block;
+            background-color: #fff;
+            margin: 30px auto;
+            padding: 10px 20px;
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000;
+            color: #fff;
+            transition: .3s;
+        }
+
+        li {
+            font-size: 20px;
+            margin-left: 40px;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>witam na stronie dodającej elementy listy</h1>
+    <button>Dodaj element listy</button>
+    <ul>
+
+    </ul>
+    <script>
+        const btn = document.querySelector("button");
+        const list = document.querySelector("ul")
+        let number = 1;
+
+        const addListElement = function () {
+            const li = document.createElement("li");
+            li.textContent = number;
+            list.appendChild(li);
+            if (number % 3 == 0) {
+                li.classList.add("big")
+            }
+            number += 2;
+        }
+        btn.addEventListener("click", addListElement);
+    </script>
+</body>
+
+</html>

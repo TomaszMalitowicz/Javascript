@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>GAME: Rock Paper Scissors</h1>
+    <div class="select">
+        <h3>Please choose:</h3>
+        <img data-option="paper" class="first" src="papier.jpg" alt="" title="paper">
+        <img data-option="rock" class="first" src="kamien.jpg" alt="" title="rock">
+        <img data-option="scissors" class="first" src="nozyczki.jpg" alt="" title="scissors">
+    </div>
+
+    <button class="start">Let's play!</button>
+    <div class="panel-left">
+        <h3>game score</h3>
+        <p>Your choice: <span data-summary="your-choice"></span></p>
+        <p>Computer choice <span data-summary="ai-choice"></span></p>
+        <h2>Game Winner: <span data-summary="who-win"></span></h2>
+    </div>
+
+    <div class="panel-right">
+        <h3>Actucal scores</h3>
+        <p class="numbers">numbers of games: <span>0</span></p>
+        <p class="wins">wins: <span>0</span></p>
+        <p class="losses">losses: <span>0</span></p>
+        <p class="draws">draws: <span>0</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

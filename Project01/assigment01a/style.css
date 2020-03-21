@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    box-sizing: border-box;
+    display: block;
+    margin: 30px auto;
+    /* height: 30px; */
+    /* line-height: 30px; */
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* vertical-align: middle; */
+    cursor: pointer;
+}
+
+div {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    margin: 5px;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid black;
+}
+
+.circle {
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid black;
+}
